@@ -1,0 +1,22 @@
+.text-input{
+    -fx-text-fill :#ffffcc ;
+    -fx-prompt-text-fill : white;
+}
+
+#body{
+
+    -fx-background-image: url(../icons/workspace_background-wallpaper-3554x1999.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+
+}
+#card{
+    /* -fx-background-color:  rgba(94, 87, 104, 0.5);*/
+    -fx-background-color:  rgba(58, 145, 200, 0.5);
+}
+
+.jfx-text-field .error-label{
+
+    -fx-text-fill :#990000;
+    -fx-font-weight: bold;
+}

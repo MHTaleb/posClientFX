@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="body" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="651.0" spacing="15.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easypos.easyposclientfx.FXMLController">
+   <children>
+      <VBox id="card" alignment="TOP_CENTER" maxWidth="442.0" opacity="0.78" prefHeight="250.0" prefWidth="442.0" spacing="25.0" stylesheets="@../styles/Styles.css">
+         <children>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="87.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="79.0" prefWidth="393.0" style="-fx-opacity: 1;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../icons/icons8_Security_Lock_64px.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" contrast="-0.07" hue="-0.61" saturation="-0.09" />
+                           </effect>
+                        </ImageView>
+                        <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Service d'authentification" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="34.0" />
+               </padding>
+            </VBox>
+            <JFXTextField fx:id="username" focusColor="#dfb51c" labelFloat="true" prefHeight="33.0" prefWidth="319.0" promptText="UTILISATEUR" styleClass="jfx-text-field" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#dfb51c" labelFloat="true" prefHeight="28.0" prefWidth="317.0" promptText="MOT DE PASSE" styleClass="jfx-text-field" unFocusColor="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <HBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="506.0" spacing="40.0">
+               <children>
+                  <JFXButton onAction="#exit" prefHeight="25.0" prefWidth="119.0" text="Annuler" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#login" prefHeight="25.0" prefWidth="199.0" text="Se Connecter" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="30.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="2.0" spread="0.41" />
+         </effect>
+         <padding>
+            <Insets bottom="10.0" right="15.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="47.0" right="47.0" top="15.0" />
+   </padding>
+</VBox>
