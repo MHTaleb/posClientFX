@@ -1,22 +1,53 @@
-.text-input{
-    -fx-text-fill :#ffffcc ;
-    -fx-prompt-text-fill : white;
-}
-
 #body{
 
-    -fx-background-image: url(../icons/workspace_background-wallpaper-3554x1999.jpg);
+    /*-fx-background-image: url(../icons/workspace_background-wallpaper-3554x1999.jpg);*/
+    -fx-background-color: transparent;
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
 
 }
 #card{
-    /* -fx-background-color:  rgba(94, 87, 104, 0.5);*/
-    -fx-background-color:  rgba(58, 145, 200, 0.5);
+    /* -fx-background-color:  rgba(94, 87, 104, 0.5); */
+        -fx-background-radius: 0.25em;
+    -fx-border-radius : 0.25em;
+    -fx-background-color:  white;
 }
 
 .jfx-text-field .error-label{
 
     -fx-text-fill :#990000;
     -fx-font-weight: bold;
+}
+
+.root{
+    -fx-background-color:rgba(0,0,0,1);
+}
+
+.Identificateur{
+    -fx-background-color : white;
+    -fx-border-color : #d1d1d1;
+    -fx-prompt-text-fill : #8E8E8E;
+    -fx-text-fill : black;
+}
+.Identificateur:focused{
+    -fx-background-color : #f5f5f5;
+    -fx-border-color : #8E8E8E;
+    -fx-prompt-text-fill : #666666;
+    -fx-font-weight: bold;
+    -fx-text-fill : black;
+     -fx-effect: dropshadow(gaussian,rgba(255,255,255,0.5) , 0,0,0,1);
+}
+
+.connectContainer{
+    -fx-background-color :#f5f4f4 ;
+    -fx-border-color:  #cecece transparent transparent transparent; 
+    -fx-border-style: solid inside ;
+}
+
+#connectButton{
+    -fx-background-color : #666666;
+    -fx-background-radius: 0.25em;
+    -fx-border-radius : 0.25em;
+    -fx-border-color : #505050;
+    -fx-raduis : 5%;
 }

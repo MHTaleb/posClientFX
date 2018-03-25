@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="Body" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.131" fx:controller="easypos.easyposclientfx.principal.PrincipalController">
+    <stylesheets>
+        <URL value="@/styles/principal.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="69.0" layoutY="50.0" prefHeight="400.0" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox id="TopMenu" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox id="Content" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

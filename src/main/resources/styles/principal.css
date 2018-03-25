@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#Body{
+    -fx-background-color: transparent;
+}
+
+#TopMenu{
+    -fx-background-color:  rgba(58, 145, 200, 0.5);
+    
+}
+
+#Content{
+    -fx-background-color:  #dedede;
+    
+}
+.jfx-tab-pane:top .depth-container .tab-header-area .headers-region .tab-selected-line{
+    -fx-background-color:  #dedede;
+    
+}
+
+.tab{
+    -fx-pref-width : 320;
+    -fx-pref-height : 52 ;
+    -fx-font-family: Cambria;
+}
+.tab-header-background{
+    -fx-background-color: #40476d;
+}
